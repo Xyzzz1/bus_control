@@ -30,14 +30,16 @@ counterclockwise、clockwise、target为请求指令，如果它们出现，同�
 如果是counterclockwise和clockwise，代表站台上的请求，后边的整数代表请求发生的站点号，counterclockwise表示逆时针方向乘车请求，clockwise代表顺时针方向乘车请求。  
 如果是target，代表车厢内下车请求，后边的整数代表要去的站点号。  
 ## 输出格式
-程序开始，先输出一次初始状态，然后每个clock输出一次当前状态；程序退出时输出end。格式如下：  
-    TIME:秒数
-    BUS:
-    position:0
-    target:0000000000
-    STATION:
-    clockwise:0000000000
-    counterclockwise:0000000000
+程序开始，先输出一次初始状态，然后每个clock输出一次当前状态；程序退出时输出end。格式如下： 
+```
+TIME:秒数
+BUS:
+position:0
+target:0000000000
+STATION:
+clockwise:0000000000
+counterclockwise:0000000000
+```
 首先输出当前的时间，即已过的秒数。  
 然后三行代表车辆，BUS:固定不变，position:固定不变，后边的数字代表当前车辆位置，target:固定不变，后边一排数字依次代表车内站点请求情况，0表示没有请求，1表示有请求。  
 最后三行代表各站点的状态，STATION: 固定不变，clockwise: 固定不变，后边的数字依次代表各站点顺时针方向的请求情况，0表示没有请求，1表示有请求。  
