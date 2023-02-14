@@ -17,9 +17,11 @@
 每个参数前无空格，参数名、等号、参数值用空格分隔。  
 其中参数有三个，即TOTAL_STATION，代表站点总数，为大于1且小于等于20的整数；DISTANCE，代表每站之间的距离，为大于0且小于6的整数；STRATEGY，代表调度策略，只能是FCFS（先来先服务），SSTF（最短寻找时间优先）和 SCAN（顺便服务）之一。  
 如果某个参数没有出现在配置文件中，则该参数取缺省值。三个参数的缺省值如下：  
-```TOTAL_STATION = 5  
+```
+TOTAL_STATION = 5  
 STRATEGY = FCFS  
 DISTANCE = 2    
+```
 ## 输入格式  
 若干行，每行一个指令。  
 指令共5种。分别为end、clock、counterclockwise、clockwise 和target。其中end是程序退出指令。  
