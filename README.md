@@ -19,7 +19,7 @@
 如果某个参数没有出现在配置文件中，则该参数取缺省值。三个参数的缺省值如下：  
 ```TOTAL_STATION = 5  
 STRATEGY = FCFS  
-DISTANCE = 2```  
+DISTANCE = 2    
 ## 输入格式  
 若干行，每行一个指令。  
 指令共5种。分别为end、clock、counterclockwise、clockwise 和target。其中end是程序退出指令。  
